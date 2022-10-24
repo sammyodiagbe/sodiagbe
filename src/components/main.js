@@ -17,8 +17,10 @@ const Main = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
+        <a href="button" className="button">
+          Contact me / hireme
+        </a>
       </aside>
-      <a href="button">Contact me / hireme</a>
     </main>
   );
 };

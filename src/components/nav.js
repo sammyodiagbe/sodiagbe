@@ -6,10 +6,18 @@ const Nav = () => {
       </div>
       <div className="links-container">
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>contact me</li>
-          <li>hire me</li>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">about</a>
+          </li>
+          <li>
+            <a href="#">Contact me</a>
+          </li>
+          <li>
+            <a href="#">Hire me</a>
+          </li>
           <li></li>
         </ul>
       </div>

@@ -1,12 +1,72 @@
-nav.navigation {
-    height: 80px;
-    padding: 0 1rem;
-    align-items: center;
-    justify-content: space-between;
+div.container {
+    width: 1000px;
+    margin: 0 auto;
+    nav.navigation {
+        height: 80px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        div.brand-container {
+            h1 {
+                font-weight: bold;
+                font-size:2rem;
+            }
+        }
+        div.links-container {
+            ul {
+               li {
+                display: inline;
+                a {
+                    padding:10px;
+                    margin-right:1rem;
+                    font-size: .8rem;
+                }
+               }
+            }
+        }
+    }
 
-    div.links-container {
-        ul {
-           
+    // main body
+    main.main-content {
+        position: relative;
+        height: 800px;
+        // background: url(./assets/sam.svg);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        img.image {
+            position: absolute;
+            height: 700px;
+            left: 0;
+        }
+
+        aside.about-me {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 500px;
+            right: 1rem;
+            padding: 1rem;
+            h1 {
+                font-size: 3rem;
+                font-weight: 900;
+                margin-bottom:1.5rem;
+            }
+            p {
+                font-weight:400;
+                line-height: 1rem;
+                margin-bottom:1.5rem;
+            }
+
+            a.button {
+                text-decoration:none;
+                display: inline-block;
+                padding:.8rem 1.5rem;
+                background:rgb(227, 10, 64);
+                border-radius: 1rem;
+                font-size:.8rem;
+            }
         }
     }
 }

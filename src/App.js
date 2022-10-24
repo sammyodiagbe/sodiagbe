@@ -5,10 +5,10 @@ import Main from "./components/main";
 
 function App() {
   return (
-    <Fragment>
+    <div className="container">
       <Nav />
       <Main />
-    </Fragment>
+    </div>
   );
 }
 
