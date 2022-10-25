@@ -1,14 +1,16 @@
-import { Fragment } from "react";
-import Nav from "./components/nav";
 import "./App.css";
-import Main from "./components/main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
 
 function App() {
   return (
-    <div className="container">
-      <Nav />
-      <Main />
-    </div>
+    <Router>
+      <div className="container">
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
