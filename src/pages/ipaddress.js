@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 import Nav from "../components/nav";
 import "../styles/ipaddress.css";
+import axios from "axios";
 
 const IpAddress = () => {
   const [ipaddress, setIp] = useState("");
 
   useEffect(() => {
-    fetch("https://api.ipify.org")
-      .then((response) => {
-        console.log(response.json());
+    console.log(process.env.REACT_IP_API);
+    axios
+      .get(
+        `https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_IP_API}`
+      )
+      .then((data) => {
+        console.log(data);
       })
       .catch((err) => console.log(err));
   }, []);
