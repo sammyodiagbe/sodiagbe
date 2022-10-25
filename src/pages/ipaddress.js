@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Nav from "../components/nav";
+import "../styles/ipaddress.css";
 
 const IpAddress = () => {
+  const [ipaddress, setIp] = useState("");
   return (
     <div className="container">
       <Nav />
