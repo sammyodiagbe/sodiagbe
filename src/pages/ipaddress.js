@@ -10,7 +10,7 @@ const IpAddress = () => {
     console.log(process.env.REACT_IP_API);
     axios
       .get(
-        `https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_IP_API}`
+        `https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_GEO_API}`
       )
       .then((data) => {
         console.log(data);
