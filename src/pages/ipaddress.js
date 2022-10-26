@@ -22,6 +22,7 @@ const IpAddress = () => {
       <Nav />
       <main className="main">
         <h1>Your IP Address is</h1>
+        <h2>{process.env.REACT_APP_GEO_API}</h2>
       </main>
     </div>
   );
