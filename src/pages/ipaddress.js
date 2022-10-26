@@ -7,7 +7,7 @@ const IpAddress = () => {
   const [ipaddress, setIp] = useState("");
 
   useEffect(() => {
-    console.log(process.env.REACT_IP_API);
+    console.log(process.env.REACT_APP_GEO_API);
     axios
       .get(
         `https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_GEO_API}`
