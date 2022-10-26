@@ -14,6 +14,10 @@ const IpAddress = () => {
       )
       .then((data) => {
         console.log(data);
+        const {
+          data: { ip },
+        } = data;
+        setIp(ip);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -21,8 +25,8 @@ const IpAddress = () => {
     <div className="container">
       <Nav />
       <main className="main">
-        <h1>Your IP Address is</h1>
-        <h2>{process.env.REACT_APP_IP_API}</h2>
+        <h1 className="title">Your IP Address is</h1>
+        <h1 className="ip">{ipaddress}</h1>
       </main>
     </div>
   );
