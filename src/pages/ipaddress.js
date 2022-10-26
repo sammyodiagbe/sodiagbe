@@ -13,7 +13,6 @@ const IpAddress = () => {
         `https://geo.ipify.org/api/v2/country?apiKey=${process.env.REACT_APP_IP_API}`
       )
       .then((data) => {
-        console.log(data);
         const {
           data: { ip },
         } = data;
